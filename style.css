@@ -248,10 +248,11 @@ select:-webkit-autofill {
 /* hero area style here */
 .hero_area {
     padding: 96px 0;
+background: linear-gradient(2deg, rgba(79, 70, 229, 0.37) 0%, rgba(255, 255, 255, 0) 100%);
 }
 .hero-content {
     padding: 0 170px;
-    margin-bottom: 64px;
+    margin-bottom: 124px;
 }
 .hero_area .app_button {
     margin-top: 48px;
@@ -260,20 +261,19 @@ select:-webkit-autofill {
     justify-content: center;
     gap: 8px;
 }
-
-/* .hero_area .hero-image {
+.hero_area {
     position: relative;
 }
-.hero_area .hero-image .parent_img {
-    position: absolute;
-    top: 0;
-    left: 125px;
+.hero_area .hero-image .image_group .parent_img {
+    position: relative;
+    left: -125px;
+    top: -60px;
 }
-.hero_area .hero-image .child_img {
+.hero_area .hero-image .image_group .child_img {
     position: absolute;
-    top: 150px;
-    right: 140px;
-} */
+    right: 230px;
+    bottom: 60px;
+}
 
 /* brand area style here */
 .brand_area {
@@ -415,10 +415,24 @@ select:-webkit-autofill {
 .testimonial_area .section-title {
     margin-bottom: 64px;
 }
+.testimonial_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 32px;
+}
+.testimonial_wrapper .card-row {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
 .testimonial_card {
     padding: 24px;
     border: 1px solid #E2E8F0;
     border-radius: 24px;
+
+}
+.testimonial_card .review {
+    margin-bottom: 24px;
 }
 .testimonial_card p {
     font-size: 18px;
@@ -458,6 +472,9 @@ select:-webkit-autofill {
     border-radius: 24px;
     border: 1px solid #E2E8F0;
 }
+.location_card .icon {
+    margin-bottom: 24px;
+}
 .location_card h5 {
     font-size: 20px;
     font-weight: 900;
@@ -466,7 +483,7 @@ select:-webkit-autofill {
 }
 .location_card span {
     font-size: 16px;
-    display: block;
+    /* display: block; */
     color: var(--secondary-color);
     line-height: 1.6;
     padding-right: 46px;
@@ -480,12 +497,91 @@ select:-webkit-autofill {
 .faq_area .section-title {
     margin-bottom: 48px;
 }
+.accordion_area .accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion_area .accordion-item {
+    border-bottom: 1px solid #e2e8f0;
+}
+.accordion_area .accordion-item .title {
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+.accordion_area .accordion-header {
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+    justify-content: space-between;
+}
+
+.accordion_area .accordion-header:hover {
+    background: #f1f5f9;
+}
+
+.accordion_area .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.accordion_area .accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    background: #f9fafb;
+    padding: 0 18px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion_area .accordion-body p {
+    padding: 15px 0;
+    margin: 0;
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Input handling */
+.accordion_area .accordion-item input[type="checkbox"] {
+    display: none;
+}
+
+.accordion_area .accordion-item input[type="checkbox"]:checked~.accordion-body {
+    max-height: 500px;
+    /* Adjust if needed */
+    padding: 15px 18px;
+}
+.right-icon {
+    transition: transform 0.3s ease;
+}
+.accordion-item input[type="checkbox"]:checked~.accordion-header .right-icon {
+    transform: rotate(180deg);
+}
 
 /* download area style here */
 
 .download_area {
-    padding: 64px 0;
     background: #EEF2FF;
+    position: relative;
+    overflow: hidden;
+}
+.download_image {
+    position: absolute;
+    right: -74px;
+    top: -92px;
+    max-width: 560px;
+}
+.download_content {
+    padding: 100px 660px 100px 0;
 }
 .download_content .title {
     font-size: 36px;
@@ -548,4 +644,17 @@ select:-webkit-autofill {
     font-size: 14px;
     color: #94A3B8;
     font-weight: 500;
+}
+
+#scrollBtn {
+    cursor: pointer;
+    display: none;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #CBD5E1;
+    border-radius: 50px;
+    background: transparent;
+}
+#scrollBtn:hover {
+    border-color: var(--primary-color);
 }
