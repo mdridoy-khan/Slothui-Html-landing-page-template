@@ -21,3 +21,16 @@
       behavior: "smooth"
     });
   }
+
+// humburger menu
+const menuToggle = document.getElementById('mobile_menu_btn');
+const closeMenu = document.getElementById('close-menu');
+const sideMenu = document.getElementById('side-menu');
+
+menuToggle.addEventListener('click', function() {
+  sideMenu.classList.add('active');
+});
+
+closeMenu.addEventListener('click', function() {
+  sideMenu.classList.remove('active');
+});
