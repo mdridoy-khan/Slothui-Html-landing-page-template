@@ -232,9 +232,11 @@
 }
 
 @media screen and (min-device-width: 480px) and (max-device-width: 640px) {
+    /* hero area */
     .hero_area .hero-image .image_group .child_img {
         max-width: 170px;
     }
+    /* testimonial area */
     .testimonial_wrapper {
         grid-template-columns: repeat(2, auto);
         gap: 16px;
@@ -249,13 +251,16 @@
         max-width: 300px;
         margin: 32px auto 0 auto;
     }
+    /* location area */
     .location_wrapper {
         grid-template-columns: repeat(2, auto);
     }
+    /* download area */
     .download_image {
         bottom: 35px;
         max-width: 400px;
     }
+    /* footer area */
     .footer_widget_wrapper {
         grid-template-columns: repeat(2, auto);
     }
@@ -267,12 +272,16 @@
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
+    /* header area */
     .header_area .nav {
         display: none;
     }
     .header_area .header-action-btn {
         display: none;
     }
+
+    /* hero area */
     .hero-content {
         padding: 0;
     }
@@ -286,6 +295,8 @@
         right: 57px;
         bottom: 18px;
     }
+
+    /* brand area */
     .brand_wrapper {
         grid-template-columns: repeat(3, auto);
         gap: 32px;
@@ -293,21 +304,29 @@
     .section-title .text {
         padding: 0;
     }
+
+    /* features area */
     .features_area .card_row {
         grid-template-columns: repeat(1, auto);
     }
+
+    /* funfact area */
     .funfact_area .funfact_item span {
         font-size: 17px;
     }
     .section-title .text.padding-remove {
         padding: 0;
     }
+
+    /* whyChooseUs area */
     .whyChooseUs_content_wrapper {
         flex-direction: column;
     }
     .whyChooseUs_content_wrapper .content li {
         padding: 24px;
     }
+
+    /* testimonial area */
     .testimonial_wrapper {
         grid-template-columns: repeat(2, auto);
         gap: 16px;
@@ -370,9 +389,13 @@
     .download_content {
         padding: 0;
     }
+
+    /* footer area */
     .footer_widget_wrapper {
         grid-template-columns: repeat(3, auto);
     }
+
+    /* location area */
     .location_wrapper {
         grid-template-columns: repeat(2, auto);
     }
@@ -382,6 +405,8 @@
     .container {
         max-width: 768px;
     }
+
+    /* header area */
     .header_area .nav {
         display: flex;
     }
@@ -401,12 +426,18 @@
     .mobile_menu_btn {
         display: none;
     }
+
+    /* copyright area */
     .copyright_area .mobile-block {
         display: none;
     }
+
+    /* features area */
     .features_area .card_row {
         grid-template-columns: repeat(3, auto);
     }
+
+    /* testimonial area */
     .testimonial_area .load_more_btn {
         max-width: 300px;
         margin: 32px auto 0 auto;
@@ -419,6 +450,8 @@
         justify-content: center;
         gap: 8px;
     }
+
+    /* download area */
     .download_buttons {
         flex-direction: row;
     }
@@ -428,6 +461,8 @@
     .container {
         max-width: 1024px;
     }
+
+    /* header area */
     .nav .header_menu {
         gap: 32px;
     }
@@ -438,10 +473,14 @@
         font-size: 16px;
         padding: 12px 20px;
     }
+
+    /* hero area */
     .hero-content {
         padding: 0 170px;
         margin-bottom: 124px;
     }
+
+    /* brand area */
     .brand_wrapper {
         grid-template-columns: repeat(6, auto);
         gap: 64px;
@@ -449,15 +488,21 @@
     .section-title .text {
         padding: 0 210px;
     }
+
+    /* funfact area */
     .funfact_area .funfact_item span {
         font-size: 18px;
     }
     .section-title .text.padding-remove {
         padding: 0 240px 0 0;
     }
+
+    /* whyChooseUs area */
     .whyChooseUs_content_wrapper {
         flex-direction: row;
     }
+
+    /* download area */
     .download_area {
         padding: 0;
     }
@@ -480,6 +525,8 @@
     .container {
         max-width: 1280px;
     }
+
+    /* hero area */
     .hero-content {
         padding: 0 170px;
         margin-bottom: 124px;
@@ -501,6 +548,8 @@
     .section-title .text.padding-remove {
         padding: 0 500px 0 0;
     }
+
+    /* testimonial area */
     .testimonial_area .load_more_btn {
         display: none;
     }
@@ -509,14 +558,23 @@
     }
     .testimonial_wrapper {
         grid-template-columns: repeat(3, auto);
-        gap: 16px;
+        gap: 32px;
     }
+    .testimonial_wrapper .card-row {
+        gap: 32px;
+    }
+
+    /* location area */
     .location_wrapper {
         grid-template-columns: repeat(4, auto);
     }
+
+    /* download area */
     .download_buttons a {
         width: auto;
     }
+
+    /* footer area */
     .footer_widget_wrapper {
         grid-template-columns: repeat(6, auto);
     }

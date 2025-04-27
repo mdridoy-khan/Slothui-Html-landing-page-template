@@ -129,6 +129,8 @@ h3 {
 .secondary_btn.modify_btn:hover {
     color: var(--white-color);
 }
+
+/* colors */
 :root {
     --primary-color: #4F46E5;
     --white-color: #ffffff;
@@ -325,7 +327,7 @@ select:-webkit-autofill {
 /* hero area style here */
 .hero_area {
     padding: 96px 0;
-background: linear-gradient(2deg, rgba(79, 70, 229, 0.37) 0%, rgba(255, 255, 255, 0) 100%);
+background: linear-gradient(2deg, rgba(45, 35, 235, 0.37) 0%, rgba(255, 255, 255, 0) 85%);
 }
 .hero-content {
     padding: 0 170px;

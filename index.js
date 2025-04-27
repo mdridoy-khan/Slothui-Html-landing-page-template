@@ -1,7 +1,5 @@
-  // Get the button
+  // scroll to top button
   const scrollBtn = document.getElementById("scrollBtn");
-
-  // When the user scrolls down 100px from the top, show the button
   window.onscroll = function() {
     scrollFunction();
   };
@@ -14,13 +12,12 @@
     }
   }
 
-  // When the user clicks on the button, scroll to the top of the document
   function topFunction() {
     window.scrollTo({
       top: 0,
       behavior: "smooth"
     });
-  }
+}
 
 // humburger menu
 const menuToggle = document.getElementById('mobile_menu_btn');
